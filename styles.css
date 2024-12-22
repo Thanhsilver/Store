@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #ffffff, #f0f0f0);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.left-section {
+    flex: 1;
+    padding: 150px;
+}
+
+.title-logo {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;           
+    padding: 5px;                 
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    margin: -125px -85px;
+}
+
+.image-logo {
+    width: 305px;
+    height: auto;
+}
+
+.gradient-bar {
+    display: flex;
+    width: 150px;
+    height: 20px;
+    background: linear-gradient(to right,#1ab5fa , pink);
+    border-radius: 50px;
+}
+
+.title {
+    font-family: 'CompanyNameFont', sans-serif;
+    font-size: 80px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 90px;
+    margin-top: -5px;
+}
+
+.right-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Container */
+.shape-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    height: 300px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Main shape with gradient and rounded edges */
+.main-shape {
+    background: linear-gradient(135deg, #40E0D0, #FF8C00, #FF0080); /* Gradient colors */
+    width: 70%;
+    height: 200px;
+    border-radius: 50px 0 0 50px; /* Rounded edges */
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 60% 100%, 0% 100%); /* Custom shape */
+}
+
+/* Arrow container */
+.arrows {
+    display: flex;
+    gap: 10px;
+}
+
+/* Individual arrow shapes */
+.arrow {
+    background: linear-gradient(to right, #FF8C00, #FF0080); /* Gradient */
+    width: 60px;
+    height: 60px;
+    clip-path: polygon(100% 50%, 0% 0%, 0% 100%); /* Arrow shape */
+    border-radius: 10px; /* Slightly rounded edges */
+}
+
+svg {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+  }
+
+
+
+@font-face {
+    font-family: 'CompanyNameFont';
+    src:url('/fonts/myfonts_order_6304319799466/Phonk-RegularDEMO.otf') format('truetype');
+    font-weight: normal; 
+    font-style: normal;  
+}
